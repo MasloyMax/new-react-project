@@ -6,3 +6,27 @@
     max-height: 550px;
     grid-area: n;
 }
+
+.container_bar{
+   text-align: center;
+}
+
+.container_bar a{
+    text-decoration: none;
+    color: #050404;
+    transition: 0.5s;
+}
+
+.container_bar a:hover{
+    color: #fcf9f9;
+    background-color: silver;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 30px;
+    transition: 0.5s;
+}
+
+.link{
+    padding-top: 20px;
+}
+

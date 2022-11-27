@@ -1,0 +1,32 @@
+.post_block{
+    padding-top: 100px;
+    padding-left: 50px;
+}
+
+textarea{
+    resize: none;
+    min-height: 50px;
+}
+.title_post{
+    padding-top: 50px;
+}
+
+.button{
+    margin-left: 100px;
+    width: 70px;
+    height: 30px;
+    border-radius: 20px;
+    border: none;
+    transition: 0.5s;
+}
+.button:hover{
+    font-size: 20px;
+    background-color: #050404;
+    color: #fcf9f9;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.post_text{
+    padding-top: 10px;
+}

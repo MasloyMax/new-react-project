@@ -1,0 +1,19 @@
+.dialog_block{
+    display: grid;
+    grid-template-columns: 1fr 10fr;
+}
+
+.dialog_block a{
+    text-decoration: none;
+    color: black;
+    transition: 0.5s;
+}
+
+.dialog_block a:hover{
+    color: white;
+    cursor: pointer;
+    background-color: midnightblue;
+    padding: 10px;
+    border-radius: 20px;
+    transition: 0.5s;
+}

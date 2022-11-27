@@ -1,16 +1,30 @@
-import logo from './logo.svg';
 import './App.css';
 import Header from './components/Header/Header';
 import NavBar from './components/NavBar/NavBar';
-import Contents from "./components/Contents/Contents";
+import {BrowserRouter, Route, Routes} from "react-router-dom";
+import Profile from "./components/Contents/Profile/Profile";
+import Dialogs from "./components/Contents/Dialogs/Dialogs";
+import Music from "./components/Contents/Music/Music";
+import Settings from "./components/Contents/Settings/Settings";
+import News from "./components/Contents/News/News";
 
 function App() {
     return (
-        <div className={'app-wrapper'}>
-            <Header/>
-            <NavBar/>
-            <Contents/>
-        </div>
+        <BrowserRouter>
+            <div className={'app-wrapper'}>
+                <Header/>
+                <NavBar/>
+                <div className="wrapper_content">
+                    <Routes>
+                        <Route path="/profile" element={<Profile/>}/>
+                        <Route path="/dialog" element={<Dialogs/>}/>
+                        <Route path="/music" element={<Music/>}/>
+                        <Route path="/settings" element={<Settings/>}/>
+                        <Route path="/news" element={<News/>}/>
+                    </Routes>
+                </div>
+            </div>
+        </BrowserRouter>
     );
 }
 
