@@ -11,6 +11,7 @@ import News from "./components/Contents/News/News";
 
 
 function App(props:any) {
+    debugger
     return (
         <BrowserRouter>
             <div className={'app-wrapper'}>
@@ -18,7 +19,7 @@ function App(props:any) {
                 <NavBar/>
                 <div className="wrapper_content">
                     <Routes>
-                        <Route path="/profile" element={<Profile state={props.state.ProfilePage}/>}/>
+                        <Route path="/profile" element={<Profile ProfilePage={props.state.ProfilePage}/>}/>
                         <Route path="/dialog" element={<Dialogs/>}/>
                         <Route path="/music" element={<Music/>}/>
                         <Route path="/settings" element={<Settings/>}/>

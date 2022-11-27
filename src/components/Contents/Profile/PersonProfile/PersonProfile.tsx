@@ -10,11 +10,11 @@ const PersonProfile = (props:any) => {
                      alt=""/>
             </div>
             <div className={stylePersonProfile.person_info}>
-                <h2>{props.state[0].name}</h2>
-                <p>{props.state[1].yars}</p>
-                <p>{props.state[2].hobbies}</p>
-                <p>{props.state[3].site}</p>
-                <p>{props.state[4].aboutMyself}</p>
+                <h2>{props.ProfilePage[0].name}</h2>
+                <p>{props.ProfilePage[1].yars}</p>
+                <p>{props.ProfilePage[2].hobbies}</p>
+                <p>{props.ProfilePage[3].site}</p>
+                <p>{props.ProfilePage[4].aboutMyself}</p>
             </div>
         </div>
     )

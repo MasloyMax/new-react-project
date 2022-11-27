@@ -7,6 +7,14 @@ let state = {
             {site: 'it`s here'},
             {aboutMyself: 'tratata'}
         ]
+    },
+    PostsPage:{
+        posts:[
+            {text: 'mypost number one'},
+            {text: 'mypost number two'},
+            {text: 'mypost number tree'},
+            {text: 'mypost number foar'}
+        ]
     }
 }
 
