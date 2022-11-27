@@ -3,11 +3,12 @@ import HeaderProfile from "./HeaderProfile/HeaderProfile";
 import PersonProfile from "./PersonProfile/PersonProfile";
 import Post from './Post/Post';
 
-const Profile = () => {
+
+const Profile = (props: any) => {
   return(
       <div>
           <HeaderProfile/>
-          <PersonProfile/>
+          <PersonProfile state={props.state.personData}/>
           <Post/>
       </div>
   )

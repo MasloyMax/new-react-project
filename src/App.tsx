@@ -8,7 +8,9 @@ import Music from "./components/Contents/Music/Music";
 import Settings from "./components/Contents/Settings/Settings";
 import News from "./components/Contents/News/News";
 
-function App() {
+
+
+function App(props:any) {
     return (
         <BrowserRouter>
             <div className={'app-wrapper'}>
@@ -16,7 +18,7 @@ function App() {
                 <NavBar/>
                 <div className="wrapper_content">
                     <Routes>
-                        <Route path="/profile" element={<Profile/>}/>
+                        <Route path="/profile" element={<Profile state={props.state.ProfilePage}/>}/>
                         <Route path="/dialog" element={<Dialogs/>}/>
                         <Route path="/music" element={<Music/>}/>
                         <Route path="/settings" element={<Settings/>}/>
