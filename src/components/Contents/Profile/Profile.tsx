@@ -5,12 +5,11 @@ import Post from './Post/Post';
 
 
 const Profile = (props: any) => {
-    debugger
   return(
       <div>
           <HeaderProfile/>
           <PersonProfile ProfilePage={props.ProfilePage.personData}/>
-          <Post/>
+          <Post text={props.state.posts}/>
       </div>
   )
 }

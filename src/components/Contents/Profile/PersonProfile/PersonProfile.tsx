@@ -1,7 +1,6 @@
 import stylePersonProfile from './PersonProfile.module.css'
 
 const PersonProfile = (props:any) => {
-    debugger
     return (
         <div className={stylePersonProfile.container}>
             <div>
