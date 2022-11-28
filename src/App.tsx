@@ -9,8 +9,8 @@ import Settings from "./components/Contents/Settings/Settings";
 import News from "./components/Contents/News/News";
 
 
-
 function App(props:any) {
+
     return (
         <BrowserRouter>
             <div className={'app-wrapper'}>
@@ -20,7 +20,7 @@ function App(props:any) {
                     <Routes>
                         <Route path="/profile" element={<Profile ProfilePage={props.state.ProfilePage}
                                                                  state={props.state.PostsPage}/>}/>
-                        <Route path="/dialog" element={<Dialogs/>}/>
+                        <Route path="/dialog" element={<Dialogs state={props.state.DialogPage}/>}/>
                         <Route path="/music" element={<Music/>}/>
                         <Route path="/settings" element={<Settings/>}/>
                         <Route path="/news" element={<News/>}/>
